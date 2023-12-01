@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=IBM+Plex+Sans:wght@700&family=Oswald:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: +10;
+}
+#li,.lii {
+    font-size: 17px
+}
+#logo{
+    font-family: 'Potta One', sans-serif;
+    color: red;
+    font-size: 20px;
+}
+.logo{
+    font-family: 'Qahiri', sans-serif;
+    color:aqua;
+    font-size: 35px;
+}
+.nav-icon{
+    display: flex;
+    padding: 1.2%;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+}
+#box{
+    width: 100px;
+    height: 28px;
+    background-color: #39DB4A;
+    border-radius: 10px;
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    cursor: pointer;
+}
+li:hover{
+    cursor: pointer;
+    color: red;
+}
+
+#body-img{
+    width: 500px;
+    position: absolute;
+    right: 10%;
+    background-color: beige;
+    border-radius: 60%;
+    z-index: -1;
+}
+#para{
+    width: 550px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: 'Potta One', sans-serif; */
+    font-size: 60px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#food{
+    color: #39DB4A;
+}
+#para2{
+    width: 500px;
+    font-size: 26px;
+    margin-left: 10%;
+    margin-top: 3%;
+    color: #4A4A4A;
+    line-height: 40px;
+}
+.form{
+    /* margin-bottom: 60px; */
+    padding: 4% 49% 0% 10%;
+}
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+}
+#btn{
+    padding: 10px 20px;
+    background-color: green;
+    color: #ffff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.random-imgs{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16%;
+    /* cursor: pointer; */
+}
+#rdImg{
+    cursor: pointer;
+}
+.random-imgs img{
+    margin-top: 5%;
+    width: 180px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+#desc{
+    margin-top: 10px;
+    margin-left: 4.3%;
+    font-size: 17px;
+    font-weight: 500;
+}
+.search-collection{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 8%;
+    padding: 23% 0% 0 0;
+    row-gap: 40px;
+}
+.mealcollection{
+    width: 220px;
+    /* height: 240px; */
+    border: 3px solid black;
+    /* background-color: #ffff; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 260px; */
+}
+.imgsize{
+    width: 200px;
+    cursor: pointer;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+    /* z-index: -10; */
+}
+.imgsize:hover{
+    opacity: 0.6;
+}
+.FoodName{
+    width: 90px;
+    color: black;
+    text-align: center;
+}
+#message{
+    font-size: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.searchTextResult{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 8%;
+}
+#mainingri {
+    width: 1000px;
+    height: 500px;
+    background-color: aquamarine;
+    background-image: url("Group\ 47.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: +1;
+    border-radius: 10px;
+    border: 3px solid black;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    padding: 20% 5% 1% 32%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    display: none;
+}
+
+#crossImg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.ol {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    column-gap: 45px;
+    text-align: center;
+    margin: -31px;
+}
+.ingriImg {
+    width: 176px;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 11px;
+    border: 3px solid black;
+}
+
+
+
+@media screen and (max-width:400px) {
+    #body-img {
+        position: absolute;
+        width: 200px;
+        right: -55%;
+        bottom: 32%;
+    }
+    #para{
+        width: 240px;
+        font-size: 25px;
+        margin-top: 35%;
+    }
+    #para2{
+        width: 240px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .form{
+        padding: 10% 6% 10% 6%;
+    }
+    .random-imgs img{
+        width: 100px;
+        height: 100px;
+    }
+    #desc{
+        font-size: 13px;
+    }
+    #search-input{
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+    #btn{
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+    .search-collection{
+        grid-template-columns: repeat(3,1fr);
+        padding: 25% 0 0 0;
+        width: 480px;
+
+    }
+    .ol{
+        list-style-type: none;
+        margin-top: 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .mealcollection{
+        width: 110px;
+    }
+    .imgsize{
+        width: 100px;
+        height: 100px;
+    }
+    #mainingri{
+        margin-top: 13%;
+        width: 400px;
+        height: 300px;
+        background-size: 150px;
+        padding: 28% 0% 0% 38%;
+    }
+    .ingriImg{
+        width: 100px;
+        margin-left: 12%;
+        margin-top: -52%;
+    }
+    #li, .li {
+        font-size: 10px;
+    }
+    #crossImg{
+        margin-top: 14%;
+        width: 30px;
+    }
+    #box{
+        width: 70px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+    }
+}
