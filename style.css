@@ -1,3 +1,5 @@
+/* font family */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=IBM+Plex+Sans:wght@700&family=Oswald:wght@300&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
@@ -6,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* navigation part */
 .nav{
     position: fixed;
     width: 100%;
@@ -15,6 +18,7 @@
 #li,.lii {
     font-size: 17px
 }
+/* website logo design */
 #logo{
     font-family: 'Potta One', sans-serif;
     color: red;
@@ -25,6 +29,7 @@
     color:aqua;
     font-size: 35px;
 }
+/* navigation part  */
 .nav-icon{
     display: flex;
     padding: 1.2%;
@@ -49,6 +54,7 @@ li:hover{
     color: red;
 }
 
+/* body image  */
 #body-img{
     width: 500px;
     position: absolute;
@@ -57,6 +63,7 @@ li:hover{
     border-radius: 60%;
     z-index: -1;
 }
+/* body paragraph */
 #para{
     width: 550px;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -76,6 +83,8 @@ li:hover{
     color: #4A4A4A;
     line-height: 40px;
 }
+
+/* form part */
 .form{
     /* margin-bottom: 60px; */
     padding: 4% 49% 0% 10%;
@@ -100,6 +109,8 @@ li:hover{
     border-radius: 5px;
     margin-left: 10px;
 }
+
+/* random image sized */
 .random-imgs{
     display: flex;
     flex-direction: column;
@@ -129,6 +140,7 @@ li:hover{
     padding: 23% 0% 0 0;
     row-gap: 40px;
 }
+/* collection of food and image of food */
 .mealcollection{
     width: 220px;
     /* height: 240px; */
@@ -153,6 +165,7 @@ li:hover{
 .imgsize:hover{
     opacity: 0.6;
 }
+/* food name para */
 .FoodName{
     width: 90px;
     color: black;
@@ -162,11 +175,15 @@ li:hover{
     font-size: 15px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
+/* image of food according to user input */
 .searchTextResult{
     position: absolute;
     margin-top: 15%;
     margin-left: 8%;
 }
+
+/* ingrident div */
 #mainingri {
     width: 1000px;
     height: 500px;
@@ -185,14 +202,14 @@ li:hover{
     margin-bottom: 10%;
     display: none;
 }
-
+/* image of cross */
 #crossImg{
     position: absolute;
     right: 0;
     top: 0;
     cursor: pointer;
 }
-
+/* used in ingridents to display it in serial wise */
 .ol {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -211,7 +228,7 @@ li:hover{
 }
 
 
-
+/* responsive design */
 @media screen and (max-width:400px) {
     #body-img {
         position: absolute;
@@ -254,7 +271,7 @@ li:hover{
 
     }
     .ol{
-        list-style-type: none;
+        /* list-style-type: none; */
         margin-top: 8%;
         grid-template-columns: repeat(2,1fr);
         
@@ -271,18 +288,20 @@ li:hover{
         width: 400px;
         height: 300px;
         background-size: 150px;
-        padding: 28% 0% 0% 38%;
+        padding: 25% 8% 0% 38%;
     }
     .ingriImg{
         width: 100px;
-        margin-left: 12%;
-        margin-top: -52%;
+
     }
     #li, .li {
         font-size: 10px;
     }
+    .lii{
+        font-size: 10px;
+    }
     #crossImg{
-        margin-top: 14%;
+        margin-top: 2%;
         width: 30px;
     }
     #box{
